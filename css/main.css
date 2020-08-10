@@ -85,7 +85,141 @@ textarea {
 
 /* ==========================================================================
    Author's custom styles
-   ========================================================================== */
+   ========================================================================= */
+.homepage-masthead {
+  position: relative;
+  height: 100vh;
+  min-height: 25rem;
+  width: 100%;
+  overflow: hidden;
+  background-color: #f5f5f5;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-anchor-co-name img {
+  width: 50%;
+}
+
+.mobile-nav-icon {
+  display: flex;
+  margin: 2%;
+}
+
+/* ******************************************** */
+/* ******* NO MIN WIDTH || DROPDOWN NAV ******* */
+/* ******************************************** */
+
+.dropbtn {
+  background-color: #ffffff;
+  color: white;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  right: 0;
+  background-color: #f9f9f9;
+  min-width: 100px;
+  box-shadow: 0px 1px 10px 3px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 10px 42px 10px 10px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  color: #b21e8e;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+  background-color: #ffffff;
+}
+
+.dropdown-content nav dl {
+  text-align: center;
+}
+
+.dropdown-content nav dl dt{
+  display: inline-block;
+}
+
+.dropdown-content nav dl dt a {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  text-transform: lowercase;
+  text-decoration: none;
+  font-size: 22px;
+  color: #828282;
+}
+
+.dropdown-content #nav-on-page {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  text-transform: lowercase;
+  text-decoration: none;
+  font-size: 22px;
+  color: #b21e8e;
+  padding: 10px auto;
+}
+
+.mobile-nav-icon {
+  display: flex;
+  margin: 2%;
+}
+
+.dropbtn hr {
+  border-top: 2px solid #808080;
+	border-bottom: 1px solid #fff;
+  width: 30px;
+  margin-bottom: -13px;
+}
+
+.header-section .header-anchor-hotel-booking {
+  display: none;
+}
+
+.home-intro-copy {
+  font-family: 'EB Garamond', serif;
+}
+
+/* ******************************************** */
+/* ************** MIN WIDTH 768 *************** */
+/* ******************************************** */
+@media screen and (min-width:768px) {
+  /* ******************************************** */
+  /* ******** MIN WIDTH 768 || HOME PAGE ******** */
+  /* ******************************************** */
+
+  .mobile-nav-icon {
+    display: none;
+  }
+}
 
 /* ==========================================================================
    Helper classes
@@ -260,4 +394,3 @@ textarea {
     page-break-after: avoid;
   }
 }
-
