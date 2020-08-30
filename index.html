@@ -33,13 +33,19 @@
 
 <div class="homepage-video-background">
 
-  <div class="homepage-masthead">
-      <img src="img/TheImogene_Textured-Logo_Rasterized.png" alt="the imogene logo, scroll down to get to the site navigation">
+    <div class="homepage-masthead">
+      <div class="masthead-img">
+        <img src="img/TheImogene_Textured-Logo_Rasterized.png" alt="the imogene logo, scroll down to get to the site navigation">
+      </div>
       <div class="home-scroll-indication">
-        <p>&Rang;</p>
+        <div class="bounce">
+          <!-- <p>&Rang;</p> -->
+          <img src="img/chevrons.gif" alt="chevrons indicating to scroll down">
+        </div>
       </div>
 
-  </div>
+    </div>
+
 
   <!-- ************************** -->
   <!-- *** START | HEADER TAG *** -->
@@ -48,8 +54,9 @@
 
     <div class="header-section">
       <div class="header-anchor-co-name">
-        <img src="img/the-imogene-header-logo.png" alt="the imogene hotel and rooftop bar">
-
+        <a href="index.html" title="links to the home page">
+          <img src="img/the-imogene-header-logo.png" alt="the imogene hotel and rooftop bar">
+        </a>
       </div>
     </div>
 
@@ -70,7 +77,7 @@
             <nav>
               <dl>
 
-                <dt><a href="index.html" id="nav-on-page">hotel</a></dt>
+                <dt><a href="hotel.html">hotel</a></dt>
                   <dd>about</dd>
                   <dd>the rooms</dd>
                   <dd>the sauna</dd>
@@ -114,24 +121,53 @@
   <!-- ************************ -->
   <!-- *** START | MAIN TAG *** -->
   <!-- ************************ -->
-  <main>
+  <main class="home-page">
 
-    <section class="home-section-1">
-      <div class="home-intro-copy">
-        <h3>THE GREAT ESCAPE</h3>
-        <p>THE IMOGENE HOTEL &plus; ROOFTOP BAR is almost beyond the scope of words in trying to describe this exquisite experience. Of course we can share the basics, breath-taking panoramic views from our Rooftop Bar, phenomenal whiskey, cocktails, sushi, and cuisine, an exciting nightlife, 6 luxurious hotel rooms, not to mention a beautiful private sauna, a variety of additional accommodations and we are in close proximity of world-class skiing and mountain climbing. All in all, THE IMOGENE HOTEL &plus; ROOFTOP BAR is the perfect blend of luxury, history, privacy and serenity for the ultimate getaway.</p>
+    <div class="home-section">
+      <div class="home-intro">
+
+          <div class="home-intro-title">
+            <h3>THE GREAT ESCAPE</h3>
+          </div>
+
+          <div class="home-intro-copy">
+
+            <div class="home-intro-bar">
+            </div>
+
+            <div class="home-intro-text">
+              <p>THE IMOGENE HOTEL &plus; ROOFTOP BAR is almost beyond the scope of words in trying to describe this exquisite experience. Of course we can share the basics, breath-taking panoramic views from our Rooftop Bar, phenomenal whiskey, cocktails, sushi, and cuisine, an exciting nightlife, 6 luxurious hotel rooms, not to mention a beautiful private sauna, a variety of additional accommodations and we are in close proximity of world-class skiing and mountain climbing. All in all, THE IMOGENE HOTEL &plus; ROOFTOP BAR is the perfect blend of luxury, history, privacy and serenity for the ultimate getaway.</p>
+            </div>
+
+          </div>
+
+        </div>
+
       </div>
 
-      <div class="home-intro-img">
+    <div class="home-section">
 
-      </div>
-    </section>
-
-    <section class="home-section-2">
       <div class="home-welcome-booking">
 
+        <div class="home-welcome-booking-title">
+          <p>Ready to experience The Imogene Hotel &plus; Rooftop Bar?</p>
+        </div>
+
+        <div class="home-welcome-booking-copy">
+          <p>We are looking forward to meeting you.</p>
+        </div>
+
+        <div class="home-welcome-booking-btn">
+            <a href="index.html" title="links to the booking portal">
+              <div class="booking-btn">
+                <p>book now</p>
+              </div>
+            </a>
+        </div>
+
       </div>
-    </section>
+
+    </div>
 
   </main>
 </div>
@@ -143,50 +179,91 @@
   <!-- *** START | FOOTER TAG *** -->
   <!-- ************************** -->
   <footer>
-    <div class="footer-section">
+    <div class="footer-section-contact-info">
 
       <div class="footer-content">
-        <div class="footer-social-media-nav">
-          <nav>
-            <ul>
-              <li>facebook</li>
-              <li>instagram</li>
-              <li>twitter</li>
-              <li>LinkedIn</li>
-            </ul>
-          </nav>
+        <div class="footer-social-block">
+          <div class="footer-social-title">
+            <p>follow us</p>
+          </div>
+
+          <div class="footer-social-media-nav">
+            <nav>
+              <ul>
+                <li>
+                  <a href="https://www.facebook.com/theimogene/" title="links to the imogene's facebook page" target="_blank">
+                    <img src="img/facebook-circle-logo.png" alt="facebook golden logo">
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.instagram.com/theimogene" title="links to the imogene's instagram page" target="_blank">
+                    <img src="img/instagram-circle-logo.png" alt="instagram golden logo">
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.instagram.com/theimogene" title="links to the imogene's instagram page" target="_blank">
+                    <img src="img/twitter-circle-logo.png" alt="twitter golden logo">
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.instagram.com/theimogene" title="links to the imogene's instagram page" target="_blank">
+                    <img src="img/linkedin-circle-logo.png" alt="linkedin golden logo">
+                  </a>
+                </li>
+              </ul>
+            </nav>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-content">
+        <div class="footer-logo-block">
+
+          <div class="footer-logo">
+            <img src="img/the-imogene-header-logo.png" alt="the imogene hotel and rooftop bar">
+          </div>
+
+          <div class="footer-contact-info">
+            <div class="footer-contact-info-title">
+              <p>the imogene &plus; rooftop bar</p>
+            </div>
+            <div class="footer-contact-info-address">
+              <p>740 Main Street<br>
+              Ouray, Colorado 81427</P>
+            </div>
+            <div class="footer-contact-info-email">
+              <p>
+                <a href="mailto:info@theImogene.com" title="click here to email the imogene" class="email">info@theImogene.com</a>
+              </p>
+            </div>
+            <div class="footer-contact-info-ph">
+              <p>
+                <a href="tel:612.803.6283" target="_blank"title="click here to call the imogene" class="phone-number">555.555.5555</a>
+              </p>
+            </div>
+          </div>
 
         </div>
       </div>
 
       <div class="footer-content">
-        <div class="footer-logo">
-          <p>logo img</p>
-        </div>
-
-        <div class="footer-contact-info">
-          <p>the imogene &plus; rooftop bar<br>
-          740 Main Street<br>
-          Ouray, Colorado 81427<br>
-          info@theImogene.com<br>
-          555.555.5555</p>
+        <div class="footer-contact-us">
+          <div class="footer-contact-us-title">
+            <p>contact us</p>
+          </div>
+          <div class="footer-contact-us-subtitle">
+            <p>get in touch</p>
+          </div>
         </div>
       </div>
 
-      <div class="footer-content">
-        <div class="footer-contact-us-opt">
-          <p>contact us</p>
-          <p>get in touch</p>
-        </div>
-      </div>
     </div>
 
-    <div class="footer-section">
-      <div class="footer-content">
+    <div class="footer-section-copyright">
+      <div class="footer-copyright-content">
         <div class="footer-copyright-info">
-          <p>ALL RIGHT RESERVED &verbar; &copy; 2020 THE IMOGENE HOTEL &plus; ROOFTOP BAR &verbar; Designed &amp; Built by Blue Label Creative</p>
-        </div>
-
+          <p>ALL RIGHT RESERVED &verbar; &copy; 2020 THE IMOGENE HOTEL &plus; ROOFTOP BAR<br><span class="copyright-info-vert-bar">&nbsp;&verbar;&nbsp;</span>Designed &amp; Built by Blue Label Creative</p>
       </div>
 
     </div>
