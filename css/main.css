@@ -178,26 +178,59 @@ body {
 	60% {transform: translateY(-15px);}
 }
 
+#page-img-background {
+  background: url(../img/ouray-background.jpg);
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: auto;
+  min-width: 315px;
+  background-position: center;
+}
+
+.last-section {
+  padding-bottom: 10%;
+}
+
 header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  margin: 0% 3.5% 7%;
+  padding-top: 9%;
+}
+
+
+
+.header-section {
+
 }
 
 .header-anchor-co-name img {
-  width: 50%;
+  width: 79%;
 }
 
 .mobile-nav-icon {
   display: flex;
-  margin: 2%;
+  margin: 0;
 }
 
 /* ******************************************** */
 /* ******* NO MIN WIDTH || DROPDOWN NAV ******* */
 /* ******************************************** */
 
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: block;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown button {
+  padding: 0;
+}
+
 .dropbtn {
-  background-color: #000000;
+  background-color: transparent;
   color: white;
   font-size: 16px;
   border: none;
@@ -209,16 +242,11 @@ header {
 }
 
 .dropbtn hr {
-  border-top: 1px solid #fff;
-	border-bottom: 0px solid #fff;
+  border-top: 1px solid #eabe7f;
+	border-bottom: 0px solid #eabe7f;
   width: 30px;
 }
 
-/* The container <div> - needed to position the dropdown content */
-.dropdown {
-  position: relative;
-  display: block;
-}
 
 /* Dropdown Content (Hidden by Default) */
 .dropdown-content {
@@ -226,6 +254,7 @@ header {
   position: absolute;
   right: 0;
   background-color: #000;
+  opacity: .88;
   min-width: 100px;
   box-shadow: 0px 1px 10px 3px rgba(0,0,0,0.2);
   z-index: 1;
@@ -241,7 +270,7 @@ header {
 
 /* Change color of dropdown links on hover */
 .dropdown-content a:hover {
-  color: #b21e8e;
+  color: #edcf88;
 }
 
 /* Show the dropdown menu on hover */
@@ -269,6 +298,7 @@ header {
   text-decoration: none;
   font-size: 1.2em;
   color: #fff;
+  padding: .625em .625em 0em .625em;
 }
 
 .dropdown-content #nav-on-page {
@@ -289,6 +319,11 @@ header {
     font-size: .7em;
     padding: .625em;
     color: #fff;
+}
+
+.dropdown-content dd a {
+    color: #fff;
+    padding: 0em;
 }
 
 .header-section .header-anchor-hotel-booking {
@@ -313,20 +348,26 @@ header {
   font-family: 'Montserrat', sans-serif;
   color: #ffffff;
   text-align: center;
-  font-size: .7em;
+  font-size: .75em;
   font-weight: 100;
   margin-block-start: .4375em;
   margin-block-end: .4375em;
+}
+
+.home-welcome-booking {
+  margin-top: 10%;
+  margin-bottom: 10%;
 }
 
 .home-welcome-booking-title p {
   font-family: 'Montserrat', sans-serif;
   color: #f7cd66;
   text-align: center;
+  text-transform: uppercase;
   font-size: .7em;
-  font-weight: 300;
+  font-weight: 500;
   margin-block-start: .4375em;
-  margin-block-end: .4375em;
+  margin-block-end: 0em;
 }
 
 .home-welcome-booking-copy p {
@@ -335,8 +376,8 @@ header {
   text-align: center;
   font-size: .7em;
   font-weight: 300;
-  margin-block-start: .4375em;
-  margin-block-end: .4375em;
+  margin-block-start: 0em;
+  margin-block-end: 1.5em;
 }
 
 .booking-btn {
@@ -500,7 +541,22 @@ footer {
 .hotel-banded-img {
   width: 100%;
   overflow: hidden;
+  margin-bottom: 3.3%
 }
+
+.hotel-banded-img img {
+  width: 239%
+}
+
+.room-banded-img {
+  width: 100%;
+  overflow: hidden;
+}
+
+.room-banded-img img {
+  width: 239%
+}
+
 
 .section-title-box {
   display: flex;
@@ -516,27 +572,460 @@ footer {
 .section-title p {
   font-family: 'EB Garamond', serif;
   text-transform: uppercase;
+  letter-spacing: 2.5px;
   color: #f7cd66;
   text-align: center;
-  font-size: 1.3em;
+  font-size: .9em;
   font-weight: 300;
   margin-block-start: .4375em;
   margin-block-end: .4375em;
+}
+
+.section-copy {
+  width: 90%;
 }
 
 .section-copy p {
   font-family: 'Montserrat', sans-serif;
   color: #ffffff;
   text-align: center;
-  font-size: 1em;
+  font-size: .83em;
   font-weight: 300;
   margin-block-start: .4375em;
-  margin-block-end: .4375em;
+  margin-block-end: 1.05em;
 }
 
-.hotel-banded-img img {
-  width: 245%
+
+
+
+
+
+
+.auto-carousel .carousel {
+  position: relative;
 }
+
+.auto-carousel .button {
+  -webkit-writing-mode: horizontal-tb !important;
+  text-rendering: auto;
+  letter-spacing: normal;
+  word-spacing: normal;
+  text-indent: 0px;
+  text-shadow: none;
+  align-items: flex-start;
+  padding: 1px 7px 2px;
+  box-sizing: border-box;
+  color: inherit;
+  font: inherit;
+  text-transform: none;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  overflow: visible;
+  outline-color: #039CDA;
+  outline: none;
+  display: inline-block;
+  border: none;
+  margin: 0;
+  text-decoration: none;
+  background: transparent;
+  cursor: pointer;
+  text-align: center;
+  transition: background 250ms ease-in-out, transform 150ms ease;
+  -webkit-appearance: none;
+}
+
+.carousel-indicators {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  z-index: 15;
+  width: 60%;
+  margin-left: -30%;
+  padding-left: 0;
+  list-style: none;
+  text-align: center;
+}
+
+.carousel-inner {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+.carousel-inner > .item {
+  display: none;
+  position: relative;
+  -webkit-transition: -webkit-transform 0.6s ease-in-out;
+  -moz-transition: -moz-transform 0.6s ease-in-out;
+  -o-transition: -o-transform 0.6s ease-in-out;
+  transition: transform 0.6s ease-in-out;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-perspective: 1000px;
+  -moz-perspective: 1000px;
+  perspective: 1000px;
+}
+
+.carousel-inner > .active, .carousel-inner > .next, .carousel-inner > .prev {
+    display: block;
+}
+
+.carousel-inner > .item.active {
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  left: 0;
+}
+
+.carousel-control {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 15%;
+    opacity: .5;
+    filter: alpha(opacity=50);
+    font-size: 20px;
+    color: #fff;
+    text-align: center;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+}
+
+.carousel-control.left {
+    background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.0001) 100%);
+    background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.0001) 100%);
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.0001) 100%);
+    background-repeat: repeat-x;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#80000000', endColorstr='#00000000', GradientType=1);
+}
+
+.carousel-control.right {
+  left: auto;
+  right: 0;
+  background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.0001) 0%, rgba(0, 0, 0, 0.5) 100%);
+  background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0.0001) 0%, rgba(0, 0, 0, 0.5) 100%);
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.0001) 0%, rgba(0, 0, 0, 0.5) 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#80000000', GradientType=1);
+}
+
+.carousel-indicators li {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 1px;
+    text-indent: -999px;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: #000 \9;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+
+.left.carousel-control, .right.carousel-control {
+    background: none;
+}
+
+a.carousel-control, a.carousel-control:focus, a.carousel-control:visited {
+    color: #ccc;
+    text-shadow: none;
+    width: 5%;
+}
+
+#homeCarousel a.carousel-control {
+  width: 0%;
+}
+
+
+.carousel-inner > .item.next,
+.carousel-inner > .item.active.right {
+  -webkit-transform: translate3d(100%, 0, 0);
+  transform: translate3d(100%, 0, 0);
+  left: 0;
+}
+.carousel-inner > .item.prev,
+.carousel-inner > .item.active.left {
+  -webkit-transform: translate3d(-100%, 0, 0);
+  transform: translate3d(-100%, 0, 0);
+  left: 0;
+}
+.carousel-inner > .item.next.left,
+.carousel-inner > .item.prev.right,
+.carousel-inner > .item.active {
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  left: 0;
+}
+}
+.carousel-inner > .active,
+.carousel-inner > .next,
+.carousel-inner > .prev {
+display: block;
+}
+.carousel-inner > .active {
+left: 0;
+}
+.carousel-inner > .next,
+.carousel-inner > .prev {
+position: absolute;
+top: 0;
+width: 100%;
+}
+.carousel-inner > .next {
+left: 100%;
+}
+.carousel-inner > .prev {
+left: -100%;
+}
+.carousel-inner > .next.left,
+.carousel-inner > .prev.right {
+left: 0;
+}
+.carousel-inner > .active.left {
+left: -100%;
+}
+.carousel-inner > .active.right {
+left: 100%;
+}
+
+
+.rb-details-box-copy {
+  margin-right: 3%;
+  color: #000;
+  position: absolute;
+  right: 0;
+  z-index: 4;
+  min-width: 45px;
+  max-height: 20px;
+  font-family: 'Quicksand', sans-serif;
+  font-size: .9em;
+  font-weight: 100;
+  line-height: 1.5em;
+  padding-left: 5px;
+  padding-right: 4px;
+  /* opacity: .5; */
+}
+
+.rb-details-box {
+  min-width: 35px;
+}
+  #homeCarousel a.carousel-control {
+    width: 0%;
+  }
+
+  .carousel {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 1500px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .auto-carousel button {
+    display: inline-block;
+    border: none;
+    margin: 0;
+    text-decoration: none;
+    background: transparent;
+    cursor: pointer;
+    text-align: center;
+    transition: background 250ms ease-in-out,
+      transform 150ms ease;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+  }
+
+  button:hover,
+  button:focus {
+    background: transparent;
+  }
+
+  button:focus {
+    outline: unset;
+    outline-offset: unset;
+  }
+
+  button:active {
+    transform: scale(0.99);
+  }
+
+  #carouselButtons {
+    margin-left: 100px;
+    position: absolute;
+    bottom: 20px;
+    z-index: 9999;
+  }
+
+  .carousel-indicators-blk {
+    display: flex;
+    flex-flow: row;
+    /* border-radius: 33px;
+    background-color: rgba(1, 29, 49, 0.7); */
+    padding: 3px 15px 3px 0px;
+    /*position: absolute;*/
+    bottom: 10px;
+    left: unset;
+    z-index: 15;
+    width: unset;
+    margin-left: unset;
+    padding-left: 0;
+    list-style: none;
+    text-align: center;
+  }
+
+  .carousel-indicators {
+    position: unset;
+    bottom: unset;
+    left: unset;
+    z-index: unset;
+    width: unset;
+    margin-left: unset;
+    padding-left: unset;
+    display: flex;
+    align-items: center;
+  }
+
+  #carouselButtons {
+    margin-left: unset;
+    position: unset;
+    bottom: unset;
+    z-index: unset;
+  }
+
+  .fa-play {
+    margin: 0 2px 2px 15px;
+    top: 25%;
+    width: 1px;
+    height: 1px;
+    border-left: solid 13px #f7cd66;
+    border-bottom: solid 8px transparent;
+    border-top: solid 8px transparent;
+    cursor: pointer;
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  .fa-pause {
+    margin: 0 2px 2px 15px;
+    top: 25%;
+    width: 5px;
+    height: 13px;
+    border-top: solid 0px transparent;
+    border-right: solid 4px #f7cd66;
+    border-bottom: solid 0px transparent;
+    border-left: solid 4px #f7cd66;
+    cursor: pointer;
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  .carousel-indicators-blk>ol {
+    margin: 0;
+  }
+
+  .carousel-indicators>li {
+    margin: 0 9px;
+    background-color: #f7cd66;
+    border-color: #f7cd66;
+    opacity: .7;
+    width: 27px;
+    height: 3px;
+  }
+
+  .carousel-indicators>li.active {
+    margin: 0 9px;
+    width: 29px;
+    height: 4px;
+    opacity: 1;
+  }
+
+  .hp-hero-carousel-mobile {
+    display: block;
+  }
+
+  .hp-hero-carousel-mobile img {
+    width: 100%;
+    height: auto;
+  }
+
+  .hp-hero-carousel-desktop {
+    display: none;
+  }
+
+  .fa-pause::before {
+    display:none;
+  }
+
+  .fa-play::before {
+    display:none;
+  }
+
+  .carousel-inner .item .next .active {
+    display:none;
+  }
+
+  .modal-details {
+     position: fixed;
+     font-family: Arial, Helvetica, sans-serif;
+     top: 0;
+     right: 0;
+     bottom: 0;
+     left: 0;
+     background: rgba(0,0,0,0.8);
+     z-index: 99999;
+     opacity:0;
+     -webkit-transition: opacity 400ms ease-in;
+     -moz-transition: opacity 400ms ease-in;
+     transition: opacity 400ms ease-in;
+     pointer-events: none;
+  }
+
+  .modal-details:target {
+    opacity:1;
+    pointer-events: auto;
+  }
+
+  .modal-details > div {
+    width: 250px;
+    position: relative;
+    margin: 5% auto;
+    padding: 5px 20px 13px 20px;
+    border-radius: 10px;
+    background: #fff;
+    background: -moz-linear-gradient(#fff, #999);
+    background: -webkit-linear-gradient(#fff, #999);
+    background: -o-linear-gradient(#fff, #999);
+  }
+
+  .close-details {
+    background: #606061;
+    color: #FFFFFF;
+    line-height: 25px;
+    position: absolute;
+    right: -12px;
+    text-align: center;
+    top: -10px;
+    width: 24px;
+    text-decoration: none;
+    font-weight: bold;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    border-radius: 12px;
+    -moz-box-shadow: 1px 1px 3px #000;
+    -webkit-box-shadow: 1px 1px 3px #000;
+    box-shadow: 1px 1px 3px #000;
+  }
+
+  .close-details:hover { background: #00d9ff; }
+
+
+
+
+
 
 .rooms-grid-box {
   display: flex;
@@ -562,12 +1051,12 @@ footer {
   width: 100%;
   position: absolute;
   top: 45%;
-  background-color: #ffffff;
+  background-color: #294634;
 }
 
 .room-title-background p {
-  font-family: 'Montserrat', sans-serif;
-  color: #000000;
+  font-family: 'EB Garamond', serif;
+  color: #ffffff;
   text-align: center;
   font-size: .7em;
   font-weight: 100;
@@ -585,7 +1074,7 @@ footer {
 .suana {
   padding: 0;
   list-style-type:none;
-  width: 70%;
+  width: 90%; /*70 for desktop*/
   margin: 1.5625em Auto 2em;
 }
 
@@ -661,20 +1150,20 @@ a.prev-b:hover,a.next-b:hover {
   font-family: 'EB Garamond', serif;
   position: relative;
   padding: 3px;
-  font-size:35px;
+  font-size: 1em;
   font-weight: 200;
-  cursor:pointer;
+  cursor: pointer;
   color: #B8B8B8;
 }
 
 
 .prev-b, .next-b {
   background: #fff;
-	height:1.25em;
-	width:1em;
-	opacity:0.35;
-	cursor:pointer;
-	-webkit-transition:opacity 200ms ease-out;
+	height: .75em;
+	width: 1em;
+	opacity: 0.35;
+	cursor: pointer;
+	-webkit-transition: opacity 200ms ease-out;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -691,6 +1180,373 @@ a.prev-b:hover,a.next-b:hover {
     max-height:550px;
 }
 
+.contact-form-section,
+.rooftop-bar-reservations {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.contact-form-bckgrnd {
+  background: #f7cd66;
+}
+
+.rooftop-bar-reservations-bckgrnd {
+  background: #294634;
+}
+
+.contact-form-box,
+.contact-without-form-box,
+.rooftop-bar-reservations-box {
+  width: 90%;
+  margin: 0 auto .7em;
+  padding: .7em 0;
+}
+
+.contact-form-title p {
+  font-family: 'EB Garamond', serif;
+  font-size: 1.2em;
+  color: #4e4e4e;
+  margin-block-start: .3em;
+  margin-block-end: .2em;
+}
+
+.rooftop-bar-reservations-title p {
+  font-family: 'EB Garamond', serif;
+  font-size: 1.2em;
+  color: #ffffff;
+  margin-block-start: .3em;
+  margin-block-end: .2em;
+}
+
+.contact-form-single-line,
+.contact-form-multiple-line,
+.rooftop-bar-reservations-single-line,
+.rooftop-bar-reservations-multiple-line {
+  background: #ffffff;
+  margin-bottom: .8em;
+  padding: .3em 0 .2em;
+}
+
+.contact-form-single-line p,
+.contact-form-multiple-line p,
+.rooftop-bar-reservations-single-line p,
+.rooftop-bar-reservations-multiple-line p {
+  font-family: 'Montserrat', sans-serif;
+  font-size: .65em;
+  text-transform: capitalize;
+  color: #4e4e4e;
+  line-height: unset;
+  margin-block-start: .3em;
+  margin-block-end: .2em;
+  margin-inline-start: .5em;
+}
+
+.contact-form-submit-btn {
+  width: 30%;
+  background: #4e4e4e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rooftop-bar-reservations-submit-btn {
+  width: 30%;
+  background: #b4b4b4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-form-submit-btn p,
+.rooftop-bar-reservations-submit-btn p {
+  color: #ffffff;
+  margin-block-start: .3em;
+  margin-block-end: .2em;
+}
+
+.contact-without-form-bckgrnd {
+  background: #f3f3f3;
+}
+
+.contact-details-title p{
+  font-family: 'EB Garamond', serif;
+  font-size: 1.2em;
+  text-transform: capitalize;
+  color: #4e4e4e;
+  margin-block-start: .3em;
+  margin-block-end: .2em;
+}
+
+.contact-details-copy p {
+  font-family: 'Montserrat', sans-serif;
+  font-size: .65em;
+  color: #4e4e4e;
+  line-height: unset;
+  margin-block-start: .3em;
+  margin-block-end: .2em;
+  margin-inline-start: .5em;
+}
+
+.contact-details-subtitle p {
+  font-family: 'Montserrat', sans-serif;
+  font-size: .65em;
+  font-weight: 600;
+  text-transform: capitalize;
+  color: #4e4e4e;
+  line-height: unset;
+  margin-block-start: .3em;
+  margin-block-end: .2em;
+  margin-inline-start: .5em;
+}
+
+.contact-details-subtitle  a {
+  color: #4e4e4e;
+  text-decoration: none;
+}
+
+.contact-details-subtitle  a:hover {
+  color: #eabe7f;
+}
+
+.contact-details-address-copy p {
+  font-family: 'Montserrat', sans-serif;
+  font-size: .65em;
+  text-transform: capitalize;
+  color: #4e4e4e;
+  line-height: unset;
+  margin-block-start: .3em;
+  margin-block-end: .2em;
+  margin-inline-start: .5em;
+}
+
+.contact-details-get-directions p {
+  font-family: 'Montserrat', sans-serif;
+  font-size: .65em;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #4e4e4e;
+  line-height: unset;
+  margin-block-start: .3em;
+  margin-block-end: .2em;
+  margin-inline-start: .5em;
+}
+
+.contact-details-get-directions  a {
+  color: #4e4e4e;
+  text-decoration: none;
+}
+
+.contact-details-get-directions  a:hover {
+  color: #eabe7f;
+}
+
+.whiskey-sushi-coming-soon {
+  width: 100%;
+  display: inline-block;
+  position: relative;
+  margin-bottom: 4%;
+}
+
+.whiskey-sushi-coming-soon img {
+  width: 100%;
+}
+
+.whiskey-sushi-coming-soon-notice {
+  width: 100%;
+  position: absolute;
+  font-family: 'Montserrat', sans-serif;
+  font-size: .65em;
+  text-transform: uppercase;
+  line-height: unset;
+  top: 6%;
+  color: #000000;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.whiskey-sushi-coming-soon-notice-title p {
+  font-size: 2.2em;
+  line-height: .9;
+  font-weight: 600;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+}
+
+.whiskey-sushi-coming-soon-notice-subtitle {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.whiskey-sushi-coming-soon-notice-subtitle p {
+  font-size: 1.25em;
+  font-weight: 500;
+  margin-block-start: 0em;
+  margin-block-end: .3em;
+  margin-inline-start: .3em;
+  margin-inline-end: .3em;
+}
+
+.line {
+  height: 1px;
+  width: 2.15em;
+  background: #000000;
+}
+
+.rooms-dropdown-btn {
+  height: 17px;
+  width: 46%;
+  background: linear-gradient(to right, #eac17d 0%, #edcf88 18.5%, #f3e7d9 41%, #bf822b 73%, #eabe7f 95%, #eabe7f 100%);
+  border: 2px solid rgba(0, 0, 0, 0);
+  border-radius: 2px;
+  margin-top: 8%;
+  margin-right: auto;
+  margin-left: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rooms-dropdown-btn p {
+  font-family: 'EB Garamond', serif;
+  text-transform: uppercase;
+  color: #294634;
+  text-align: center;
+  font-size: .75em;
+  line-height: .85em;
+  font-weight: 700;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+  margin-top: .65%;
+}
+
+.room-banded-img {
+  width: 100%;
+  overflow: hidden;
+  position: absolute;
+}
+
+.room-spotlight {
+  position: relative;
+  /* top: 1.7em; */ /* should match .room-parent margin-bottom: */
+}
+
+.room-parent {
+  /* margin-bottom: 1.7em;*/ /* should match .room-spotlight top: */
+}
+
+
+
+
+
+
+
+
+
+/* The container <div> - needed to position the dropdown content */
+.room-dropdown {
+  width: 100%;
+}
+
+.room-dropdown button {
+  padding: 0;
+}
+
+.room-dropdown button:hover,
+.room-dropdown button:focus {
+  height: 17px;
+  width: 46%;
+  background: linear-gradient(to right, #eac17d 0%, #edcf88 18.5%, #f3e7d9 41%, #bf822b 73%, #eabe7f 95%, #eabe7f 100%);
+  border: 2px solid rgba(0, 0, 0, 0);
+  border-radius: 2px;
+  margin-top: 8%;
+  margin-right: auto;
+  margin-left: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.room-dropdown-content {
+  display: none;
+  position: absolute;
+  right: 0;
+  background-color: #000;
+  opacity: .8;
+  box-shadow: 0px 1px 10px 3px rgba(0,0,0,0.2);
+  z-index: 1;
+  width: 70%;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+/* Links inside the dropdown */
+.room-dropdown-content a {
+  /*color: black;
+  padding: .625em .625em 0em .625em;
+  text-decoration: none;
+  display: block; */
+}
+
+/* Change color of dropdown links on hover */
+.room-dropdown-content a:hover {
+  color: #b21e8e;
+}
+
+/* Show the dropdown menu on hover */
+.room-dropdown:hover .room-dropdown-content {
+  display: block;
+}
+
+.room-dropdown-content nav dl {
+  text-align: center;
+  margin-block-start: .5em;
+  margin-block-end: .5em;
+}
+
+.room-dropdown-content nav dl dt{
+  display: inline-block;
+  width: 100%;
+}
+
+#rm-on-pg {
+  background: #294634;
+}
+
+.room-dropdown-content nav dl dt a {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  text-transform: capitalize;
+  text-decoration: none;
+  font-size: .9em;
+  color: #fff;
+}
+
+.room-dropdown-content #rm-on-pg {
+  font-family: 'Montserrat', sans-serif;
+  text-decoration: none;
+  color: #f7cd66;
+}
+
+.room-dropdown-content dd {
+    margin-inline-start: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 100;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: .7em;
+    padding: .625em;
+    color: #fff;
+}
+
+
+
+
 
 
 
@@ -698,6 +1554,14 @@ a.prev-b:hover,a.next-b:hover {
 /* ************** MIN WIDTH 320px *************** */
 /* ********************************************** */
 @media screen and (min-width:320px) {
+  .section-title p {
+      letter-spacing: 2.5px;
+      font-size: 1.1em;
+  }
+
+  .home-welcome-booking-title p {
+    font-size: .85em;
+  }
 
   .footer-social-media-nav nav ul {
     margin-bottom: .75em;
@@ -718,6 +1582,18 @@ a.prev-b:hover,a.next-b:hover {
 /* ************** MIN WIDTH 360px *************** */
 /* ********************************************** */
 @media screen and (min-width:360px) {
+
+  .modal-details > div {
+    width: 300px;
+    position: relative;
+    margin: 5% auto;
+    padding: 5px 20px 13px 20px;
+    border-radius: 10px;
+    background: #fff;
+    background: -moz-linear-gradient(#fff, #999);
+    background: -webkit-linear-gradient(#fff, #999);
+    background: -o-linear-gradient(#fff, #999);
+  }
 
   .footer-social-media-nav nav ul {
     margin-bottom: .84375em;
@@ -752,6 +1628,15 @@ a.prev-b:hover,a.next-b:hover {
   .footer-copyright-info p {
     font-size: .57422em;
     margin-block-start: .5em;
+  }
+}
+
+/* ********************************************** */
+/* ************** MIN WIDTH 401px *************** */
+/* ********************************************** */
+@media screen and (min-width: 401px) {
+  .dev-portflio-itm-spacing {
+    margin-top:12%;
   }
 }
 
@@ -802,6 +1687,37 @@ a.prev-b:hover,a.next-b:hover {
 
 }
 
+/* ********************************************** */
+/* ************** MIN WIDTH 500px *************** */
+/* ********************************************** */
+@media screen and (min-width:500px) {
+  .hp-hero-carousel-mobile {
+    display: none;
+  }
+
+  .hp-hero-carousel-desktop {
+    display: block;
+  }
+
+  .hp-hero-carousel-desktop img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* ********************************************** */
+/* ************** MIN WIDTH 601px *************** */
+/* ********************************************** */
+@media screen and (min-width: 601px) {
+  .dev-portflio-itm-spacing {
+    margin-top:17%;
+  }
+  .modal-details > div {
+    width: 400px;
+  }
+}
+
 /* ******************************************** */
 /* ************** MIN WIDTH 768 *************** */
 /* ******************************************** */
@@ -834,6 +1750,23 @@ a.prev-b:hover,a.next-b:hover {
   .footer-copyright-info p {
     font-size: .62935em;
     margin-block-start: .5em;
+  }
+
+  .dev-portflio-itm-spacing {
+    margin-top:5%;
+  }
+
+
+
+}
+
+
+/* ******************************************** */
+/* ************** MIN WIDTH 1024 ************** */
+/* ******************************************** */
+@media screen and (min-width: 1024px) {
+  .dev-portflio-itm-spacing {
+    margin-top:2%;
   }
 }
 

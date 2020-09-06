@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="no-js" lang="">
+<html class="" lang="">
 
 <head>
   <meta charset="utf-8">
@@ -21,6 +21,7 @@
 
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
+  <link href="js/main.js">
 
   <meta name="theme-color" content="#fafafa">
 </head>
@@ -31,21 +32,10 @@
 <!-- ************************ -->
 <body>
 
-<div class="homepage-video-background">
-
-    <div class="homepage-masthead">
-      <div class="masthead-img">
-        <img src="img/TheImogene_Textured-Logo_Rasterized.png" alt="the imogene logo, scroll down to get to the site navigation">
-      </div>
-      <div class="home-scroll-indication">
-        <div class="bounce">
-          <!-- <p>&Rang;</p> -->
-          <img src="img/chevrons.gif" alt="chevrons indicating to scroll down">
-        </div>
-      </div>
-
-    </div>
-
+<!-- ******************************** -->
+<!-- *** START | BACKGROUND IMAGE *** -->
+<!-- ******************************** -->
+<div class="room-page-background" id="page-img-background">
 
   <!-- ************************** -->
   <!-- *** START | HEADER TAG *** -->
@@ -121,66 +111,83 @@
   <!-- ************************ -->
   <!-- *** START | MAIN TAG *** -->
   <!-- ************************ -->
-  <main class="home-page">
+  <main class="room-page">
 
-    <div class="home-section">
-      <div class="home-intro">
-
-          <div class="home-intro-title">
-            <h3>THE GREAT ESCAPE</h3>
-          </div>
-
-          <div class="home-intro-copy">
-
-            <div class="home-intro-bar">
-            </div>
-
-            <div class="home-intro-text">
-              <p>THE IMOGENE HOTEL &plus; ROOFTOP BAR is almost beyond the scope of words in trying to describe this exquisite experience. Of course we can share the basics, breath-taking panoramic views from our Rooftop Bar, phenomenal whiskey, cocktails, sushi, and cuisine, an exciting nightlife, 6 luxurious hotel rooms, not to mention a beautiful private sauna, a variety of additional accommodations and we are in close proximity of world-class skiing and mountain climbing. All in all, THE IMOGENE HOTEL &plus; ROOFTOP BAR is the perfect blend of luxury, history, privacy and serenity for the ultimate getaway.</p>
-            </div>
-
-          </div>
-
+    <!-- ******************************************************* -->
+    <!-- * START | SECTION 1/2 TOP 'BANDED' IMG + ROOM FEATURE * -->
+    <!-- ******************************************************* -->
+    <div class="room-section">
+      <div class="room-parent">
+        <div class="room-banded-img">
+          <img src="img/tb-room.png" alt="ornate banded border">
         </div>
 
+        <div class="room-spotlight">
+          <div class="section-title-box">
+            <div class="room-dropdown">
+              <button class="rooms-dropdown-btn">
+                <p>our rooms</p>
+              </button>
+              <div class="room-dropdown-content">
+                <nav>
+                  <dl>
+                    <dt id="rm-on-pg"><a href="room-1.html">yankee girl</a></dt>
+                    <dt><a href="room-2.html">lucky twenty</a></dt>
+                    <dt><a href="room-3.html">silver bell</a></dt>
+                    <dt><a href="room-4.html">elizabeth</a></dt>
+                    <dt><a href="room-5.html">mountain queen</a></dt>
+                    <dt><a href="room-6.html">national belle</a></dt>
+                  </dl>
+                </nav>
+              </div>
+            </div>
+
+            <div class="whiskey-sushi-coming-soon">
+              <img src="img/room-id-1.jpg" alt="image of whiskey and sushi on a table top, looking out over the mountains">
+            </div>
+
+            <div class="section-title">
+              <p>the yankee girl suite</p>
+            </div>
+            <div class="section-copy">
+              <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea</p>
+            </div>
+          </div>
+        </div>
       </div>
+    </div>
 
-    <div class="home-section">
-
+    <!-- ************************************************* -->
+    <!-- ****** START | SECTION 2/2 BOOK NOW BUTTON ****** -->
+    <!-- ************************************************* -->
+    <div class="room-section last-section">
       <div class="home-welcome-booking">
-
-        <div class="home-welcome-booking-title">
-          <p>Ready to experience The Imogene Hotel &plus; Rooftop Bar?</p>
-        </div>
-
-        <div class="home-welcome-booking-copy">
-          <p>We are looking forward to meeting you.</p>
-        </div>
-
         <div class="home-welcome-booking-btn">
             <a href="index.html" title="links to the booking portal">
               <div class="booking-btn">
                 <p>book now</p>
               </div>
             </a>
+          </div>
         </div>
-
       </div>
 
-    </div>
+    <!-- ********************** -->
+    <!-- *** END | MAIN TAG *** -->
+    <!-- ********************** -->
+    </main>
 
-  </main>
-</div>
-  <!-- ********************** -->
-  <!-- *** END | MAIN TAG *** -->
-  <!-- ********************** -->
+  <!-- ******************************** -->
+  <!-- **** END | BACKGROUND IMAGE **** -->
+  <!-- ******************************** -->
+  </div>
+
 
   <!-- ************************** -->
   <!-- *** START | FOOTER TAG *** -->
   <!-- ************************** -->
   <footer>
     <div class="footer-section-contact-info">
-
       <div class="footer-content">
         <div class="footer-social-block">
           <div class="footer-social-title">
@@ -219,7 +226,6 @@
 
       <div class="footer-content">
         <div class="footer-logo-block">
-
           <div class="footer-logo">
             <img src="img/the-imogene-header-logo.png" alt="the imogene hotel and rooftop bar">
           </div>
@@ -264,36 +270,130 @@
       <div class="footer-copyright-content">
         <div class="footer-copyright-info">
           <p>ALL RIGHT RESERVED &verbar; &copy; 2020 THE IMOGENE HOTEL &plus; ROOFTOP BAR<br><span class="copyright-info-vert-bar">&nbsp;&verbar;&nbsp;</span>Designed &amp; Built by Blue Label Creative</p>
+        </div>
       </div>
-
     </div>
-  </footer>
+
   <!-- ************************ -->
   <!-- *** END | FOOTER TAG *** -->
   <!-- ************************ -->
+  </footer>
 
 
+<!-- ************************** -->
+<!-- functionality pieces below -->
+<!-- ************************** -->
+<script src="js/vendor/modernizr-3.11.2.min.js"></script>
+<script src="js/plugins.js"></script>
+<script src="js/main.js"></script>
 
-
-
-
-  <!-- ************************** -->
-  <!-- functionality pieces below -->
-  <!-- ************************** -->
-  <script src="js/vendor/modernizr-3.11.2.min.js"></script>
-  <script src="js/plugins.js"></script>
-  <script src="js/main.js"></script>
-
-  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
-  <script>
+<!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+<script>
     window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
     ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
-  </script>
-  <script src="https://www.google-analytics.com/analytics.js" async></script>
+</script>
 
-</body>
+<script src="https://www.google-analytics.com/analytics.js" async></script>
+
+<script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous"></script>
+<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
+<script src="js/plugins.js"></script>
+<script src="js/main.js"></script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+      <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script> -->
+
+
+<script>
+  $(function carousel() {
+    var paused = 0;
+    $('#homeCarousel').carousel({
+    interval: 5000,
+    pause: "false"
+    });
+    //$("#homeCarousel").on('slide.bs.carousel')
+    /* Play trigger */
+    $('#playButton').click(function() {
+    var state = (paused) ? 'cycle' : 'pause';
+    paused = (paused) ? 0 : 1;
+    $('#homeCarousel').carousel(state);
+    $(this).find('span').toggleClass('fa-play fa-pause');
+    });
+  });
+</script>
+
+<!--  <script>
+      var speed = 100;
+
+$(".prev").click(function() {
+    var now = $(this).parent().next("ul.sgallery").children(":visible"),
+        last = $(this).parent().next("ul.sgallery").children(":last"),
+        prev = now.prev();
+        prev = prev.index() == -1 ? last : prev;
+    now.fadeOut(speed, function() {prev.fadeIn(speed);});
+});
+
+$(".next").click(function() {
+    var now = $(this).parent().next("ul.sgallery").children(':visible'),
+        first = $(this).parent().next("ul.sgallery").children(':first'),
+        next = now.next();
+        next = next.index() == -1 ? first : next;
+    now.fadeOut(speed, function() {next.fadeIn(speed);});
+});
+
+$(".sgallery li").click(function() {
+    var first = $(this).parent().children(':first'),
+        next = $(this).next();
+        next = next.index() == -1 ? first : next;
+    $(this).fadeOut(speed, function() {next.fadeIn(speed);});
+});
+
+</script> -->
+
+<script>
+var speed = 100;
+
+$(".prev").click(function() {
+  var now = $(this).parent().next("ul.gallery").children(":visible"),
+      last = $(this).parent().next("ul.gallery").children(":last"),
+      prev = now.prev();
+      prev = prev.index() == -1 ? last : prev;
+  now.fadeOut(speed, function() {prev.fadeIn(speed);});
+});
+
+$(".next").click(function() {
+  var now = $(this).parent().next("ul.gallery").children(':visible'),
+      first = $(this).parent().next("ul.gallery").children(':first'),
+      next = now.next();
+      next = next.index() == -1 ? first : next;
+  now.fadeOut(speed, function() {next.fadeIn(speed);});
+});
+
+$(".gallery li").click(function() {
+  var first = $(this).parent().children(':first'),
+      next = $(this).next();
+      next = next.index() == -1 ? first : next;
+  $(this).fadeOut(speed, function() {next.fadeIn(speed);});
+});
+</script>
+
+<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+<script>
+  (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+  function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+  e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+  e.src='https://www.google-analytics.com/analytics.js';
+  r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+  ga('create','UA-XXXXX-X','auto');ga('send','pageview');
+</script>
+
 <!-- ********************** -->
 <!-- *** END | BODY TAG *** -->
 <!-- ********************** -->
+</body>
+
 
 </html>
