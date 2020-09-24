@@ -18,6 +18,7 @@ html {
   height: 100%;
   margin: 0;
   padding: 0;
+  max-width:
 }
 
 /*
@@ -102,21 +103,45 @@ body {
   background-color: #000000;
 }
 
-.homepage-video-background {
-  width: 100%;
+.home-page video {
+  object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  opacity: .5;
+}
+
+.hidemetwo {
+  display: none;
+}
+
+.viewport-header {
+  position: relative;
+  height: 100vh;
+  text-align: center;
+}
+
+.homepage-welcome-logo {
+  display: flex;
+  height: 100vh;
 }
 
 .homepage-masthead {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  padding-top: 49%;
+  padding-bottom: 17%;
+  justify-content: space-between;
   width: 100%;
 }
 
 .masthead-img {
   width: 50%;
-  margin-top: 20%;
+  /*margin-top: 55%;*/
   margin-right: auto;
+  /*margin-bottom: 50%;*/
   margin-left: auto;
 }
 .masthead-img img {
@@ -125,9 +150,9 @@ body {
 
 .homepage-masthead .home-scroll-indication {
   width: 9%;
-  margin-top: 20%;
+  /*margin-top: 50%;*/
   margin-right: auto;
-  margin-bottom: 20%;
+  /*margin-bottom: 20%;*/
   margin-left: auto;
 }
 
@@ -178,27 +203,45 @@ body {
 	60% {transform: translateY(-15px);}
 }
 
+.hotel-page-background {
+  min-height: 100vh;
+}
+
+.home-page main {
+  min-height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 #page-img-background {
   background: url(../img/ouray-background.jpg);
   background-repeat: no-repeat;
   background-attachment: scroll;
-  background-size: auto;
-  min-width: 315px;
-  background-position: center;
+  background-size: cover;
+  min-width: 280px;
+  background-position: top;
 }
 
 .last-section {
   padding-bottom: 10%;
 }
 
+.first-section {
+  padding-top: 5%;
+}
+
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 0% 3.5% 7%;
+  margin: 0% 6% 8% 8%;
   padding-top: 9%;
 }
 
+.home-page header {
+  position: relative;
+}
 
 
 .header-section {
@@ -206,7 +249,7 @@ header {
 }
 
 .header-anchor-co-name img {
-  width: 79%;
+  width: 45%;
 }
 
 .mobile-nav-icon {
@@ -235,7 +278,7 @@ header {
   font-size: 16px;
   border: none;
   cursor: pointer;
-  height: 27px;
+  height: 18px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -244,7 +287,7 @@ header {
 .dropbtn hr {
   border-top: 1px solid #eabe7f;
 	border-bottom: 0px solid #eabe7f;
-  width: 30px;
+  width: 22px;
 }
 
 
@@ -280,7 +323,7 @@ header {
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
 .dropdown:hover .dropbtn {
-  background-color: #000;
+  background-color: transparent;
 }
 
 .dropdown-content nav dl {
@@ -289,6 +332,7 @@ header {
 
 .dropdown-content nav dl dt{
   display: inline-block;
+  min-width: 175px;
 }
 
 .dropdown-content nav dl dt a {
@@ -296,7 +340,7 @@ header {
   font-weight: 300;
   text-transform: uppercase;
   text-decoration: none;
-  font-size: 1.2em;
+  font-size: .9em;
   color: #fff;
   padding: .625em .625em 0em .625em;
 }
@@ -306,7 +350,7 @@ header {
   font-weight: 300;
   text-transform: uppercase;
   text-decoration: none;
-  font-size: 1.2em;
+  font-size: .9em;
   color: #f7cd66;
 }
 
@@ -326,36 +370,68 @@ header {
     padding: 0em;
 }
 
+.horizontal-nav nav {
+  display: none;
+}
+
 .header-section .header-anchor-hotel-booking {
   display: none;
+}
+
+.home-page main {
+  min-height: 100vh;
+  position: relative;
 }
 
 .home-section {
 
 }
+.welcome-page-spacing {
+  margin-bottom: 35%;
+}
+
+.home-intro {
+  width: 83%;
+  margin-top: 5%;
+  margin-left: 8%;
+}
 
 .home-intro-title {
+  margin-bottom: .25em;
+}
+
+.home-intro-title p {
   font-family: 'EB Garamond', serif;
   color: #f7cd66;
-  text-align: center;
-  font-size: .7em;
+  text-align: left;
+  font-size: 1.25em;
   font-weight: 300;
-  margin-block-start: .4375em;
-  margin-block-end: .4375em;
+  letter-spacing: .05em;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+}
+
+.home-intro-copy {
+
+}
+
+.home-intro-text {
+  border-left: 1px solid #f7cd66;
+  padding-left: .75em;
 }
 
 .home-intro-text p {
   font-family: 'Montserrat', sans-serif;
   color: #ffffff;
-  text-align: center;
-  font-size: .75em;
-  font-weight: 100;
-  margin-block-start: .4375em;
-  margin-block-end: .4375em;
+  text-align: left;
+  font-size: .7em;
+  font-weight: 400;
+  margin-block-start: .0em;
+  margin-block-end: 1em;
 }
 
 .home-welcome-booking {
-  margin-top: 10%;
+  margin-top: 21%;
   margin-bottom: 10%;
 }
 
@@ -386,6 +462,7 @@ header {
   background: linear-gradient(to right, #eac17d 0%, #edcf88 18.5%, #f3e7d9 41%, #bf822b 73%, #eabe7f 95%, #eabe7f 100%);
   border: 2px solid rgba(0, 0, 0, 0);
   border-radius: 8px;
+  margin-top: 4%;
   margin-right: auto;
   margin-left: auto;
   display: flex;
@@ -411,8 +488,8 @@ header {
 }
 
 
-footer {
-
+.home-page footer {
+  position: relative;
 }
 
 .footer-section-contact-info {
@@ -475,6 +552,9 @@ footer {
   display: none;
 }
 
+.footer-contact-info {
+  margin-top: 6%;
+}
 .footer-contact-info-title p {
   font-family: 'Montserrat', sans-serif;
   text-transform: uppercase;
@@ -497,6 +577,18 @@ footer {
   font-weight: 100;
   margin-block-start: .4375em;
   margin-block-end: .4375em;
+}
+
+.footer-contact-info .address {
+  font-family: 'Montserrat', sans-serif;
+  color: #ffffff;
+  text-align: center;
+  text-decoration: none;
+}
+
+.footer-contact-info-address a:hover,
+.footer-contact-info-address a:hover {
+  color: #eabe7f;
 }
 
 .footer-contact-info .email {
@@ -548,9 +640,21 @@ footer {
   width: 239%
 }
 
+.hotel-section {
+  padding-bottom: 10%
+}
+
 .room-banded-img {
   width: 100%;
   overflow: hidden;
+}
+
+.small {
+  display: block;
+}
+
+.large {
+  display: none;
 }
 
 .room-banded-img img {
@@ -563,6 +667,7 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-bottom: 7%;
 }
 
 .section-title {
@@ -582,17 +687,17 @@ footer {
 }
 
 .section-copy {
-  width: 90%;
+  width: 85%;
 }
 
 .section-copy p {
   font-family: 'Montserrat', sans-serif;
   color: #ffffff;
   text-align: center;
-  font-size: .83em;
+  font-size: .7em;
   font-weight: 300;
-  margin-block-start: .4375em;
-  margin-block-end: 1.05em;
+  margin-block-start: 2.75%; /*.4375em*/
+  margin-block-end: 5%; /*1.05em*/
 }
 
 
@@ -865,7 +970,7 @@ left: 100%;
     flex-flow: row;
     /* border-radius: 33px;
     background-color: rgba(1, 29, 49, 0.7); */
-    padding: 3px 15px 3px 0px;
+    padding: .7em 15px 3px 0px;
     /*position: absolute;*/
     bottom: 10px;
     left: unset;
@@ -932,13 +1037,13 @@ left: 100%;
     background-color: #f7cd66;
     border-color: #f7cd66;
     opacity: .7;
-    width: 27px;
+    width: 3px;
     height: 3px;
   }
 
   .carousel-indicators>li.active {
     margin: 0 9px;
-    width: 29px;
+    width: 4px;
     height: 4px;
     opacity: 1;
   }
@@ -1020,12 +1125,9 @@ left: 100%;
     box-shadow: 1px 1px 3px #000;
   }
 
-  .close-details:hover { background: #00d9ff; }
-
-
-
-
-
+.close-details:hover {
+  background: #00d9ff;
+}
 
 .rooms-grid-box {
   display: flex;
@@ -1049,33 +1151,45 @@ left: 100%;
 
 .room-title-background {
   width: 100%;
+  height: 100%;
   position: absolute;
+  top: 0%;
+}
+
+.rm-hover-off {
+  position: absolute;
+  width: 100%;
   top: 45%;
   background-color: #294634;
+  opacity: .9;
+}
+
+.rm-hover-on {
+  display: none;
 }
 
 .room-title-background p {
   font-family: 'EB Garamond', serif;
   color: #ffffff;
   text-align: center;
-  font-size: .7em;
+  text-transform: capitalize;
+  font-size: .9em;
   font-weight: 100;
   margin-block-start: .4375em;
   margin-block-end: .4375em;
 }
 
-
-
-
-
+.room-subtitle {
+  font-family: 'Montserrat', sans-serif;
+  font-size: .7em;
+}
 
 /* SAUNA SLIDER */
-
 .suana {
   padding: 0;
   list-style-type:none;
   width: 90%; /*70 for desktop*/
-  margin: 1.5625em Auto 2em;
+  margin: 0% Auto 10%; /*1.5625em Auto 2em*/
 }
 
 .suana ul {
@@ -1397,8 +1511,8 @@ a.prev-b:hover,a.next-b:hover {
 }
 
 .rooms-dropdown-btn {
-  height: 17px;
   width: 46%;
+  height: 1.2em;
   background: linear-gradient(to right, #eac17d 0%, #edcf88 18.5%, #f3e7d9 41%, #bf822b 73%, #eabe7f 95%, #eabe7f 100%);
   border: 2px solid rgba(0, 0, 0, 0);
   border-radius: 2px;
@@ -1449,6 +1563,7 @@ a.prev-b:hover,a.next-b:hover {
 /* The container <div> - needed to position the dropdown content */
 .room-dropdown {
   width: 100%;
+  padding-top: .01%;
 }
 
 .room-dropdown button {
@@ -1457,12 +1572,10 @@ a.prev-b:hover,a.next-b:hover {
 
 .room-dropdown button:hover,
 .room-dropdown button:focus {
-  height: 17px;
-  width: 46%;
   background: linear-gradient(to right, #eac17d 0%, #edcf88 18.5%, #f3e7d9 41%, #bf822b 73%, #eabe7f 95%, #eabe7f 100%);
   border: 2px solid rgba(0, 0, 0, 0);
   border-radius: 2px;
-  margin-top: 8%;
+  /*margin-top: 8%;*/
   margin-right: auto;
   margin-left: auto;
   display: flex;
@@ -1495,7 +1608,7 @@ a.prev-b:hover,a.next-b:hover {
 
 /* Change color of dropdown links on hover */
 .room-dropdown-content a:hover {
-  color: #b21e8e;
+  color: #ffffff;
 }
 
 /* Show the dropdown menu on hover */
@@ -1512,6 +1625,12 @@ a.prev-b:hover,a.next-b:hover {
 .room-dropdown-content nav dl dt{
   display: inline-block;
   width: 100%;
+}
+
+.room-dropdown-content nav dl dt:hover {
+  display: inline-block;
+  width: 100%;
+  background-color: #294634;
 }
 
 #rm-on-pg {
@@ -1545,7 +1664,10 @@ a.prev-b:hover,a.next-b:hover {
 }
 
 
-
+#whiskey-sushi .home-welcome-booking {
+  margin-top: 0%;
+  margin-bottom: 0%;
+}
 
 
 
@@ -1554,6 +1676,11 @@ a.prev-b:hover,a.next-b:hover {
 /* ************** MIN WIDTH 320px *************** */
 /* ********************************************** */
 @media screen and (min-width:320px) {
+
+  #page-img-background {
+    min-width: 315px;
+  }
+
   .section-title p {
       letter-spacing: 2.5px;
       font-size: 1.1em;
@@ -1568,7 +1695,7 @@ a.prev-b:hover,a.next-b:hover {
   }
 
   .footer-contact-info p {
-    font-size: 1em;
+    font-size: .7em;
     margin-block-start: .5em;
     margin-block-end: .5em;
   }
@@ -1636,7 +1763,12 @@ a.prev-b:hover,a.next-b:hover {
 /* ********************************************** */
 @media screen and (min-width: 401px) {
   .dev-portflio-itm-spacing {
-    margin-top:12%;
+    margin-top: 0%;
+  }
+
+  .footer-social-media-nav nav ul {
+    margin-right: 30%;
+    margin-left: 30%;
   }
 }
 
@@ -1671,7 +1803,7 @@ a.prev-b:hover,a.next-b:hover {
   }
 
   .footer-social-media-nav nav ul li {
-    width: 8%;
+    width: 16%;
   }
 
   .footer-contact-info p {
@@ -1686,6 +1818,7 @@ a.prev-b:hover,a.next-b:hover {
   }
 
 }
+
 
 /* ********************************************** */
 /* ************** MIN WIDTH 500px *************** */
@@ -1704,18 +1837,100 @@ a.prev-b:hover,a.next-b:hover {
     width: 100%;
     height: auto;
   }
+
+  .carousel-indicators-blk {
+    display: flex;
+    flex-flow: row;
+    padding: 1em 15px 3px 0px;
+  }
+}
+
+/* ********************************************** */
+/* ************** MIN WIDTH 540px *************** */
+/* ********************************************** */
+@media screen and (min-width:540px) {
+  .header-anchor-co-name img {
+    width: 43%;
+  }
+
+  .homepage-masthead {
+    padding-top: 32%;
+    padding-bottom: 17%;
+  }
+
+  .home-page main {
+    min-height: 82vh;
+  }
+
+  .hotel-banded-img img {
+    width: 154%;
+  }
+
+  .hotel-section {
+    padding-bottom: 5%;
+  }
+
+  .carousel-indicators-blk {
+    padding: 7px 15px 3px 0px;
+  }
+
+  .room-title-background p {
+    font-size: 1.2em;
+  }
+
+  .suana {
+    margin: 0% Auto 5%;
+  }
+
+  .rooms-dropdown-btn {
+    width: 25%;
+  }
+
+  .room-dropdown button:hover,
+  .room-dropdown button:focus {
+    /*margin-top: 8%; */
+  }
+
+  .room-dropdown-content {
+    width: 40%;
+  }
+
+  .room-page .home-welcome-booking {
+    margin-top: 0%;
+    margin-bottom: 0%;
+  }
+
+  .room-page .whiskey-sushi-coming-soon img {
+    width: 86%;
+    margin-right: 7%;
+    margin-left: 7%;
+  }
+
+  .footer-social-media-nav nav ul {
+      margin-right: 34%;
+      margin-left: 34%;
+  }
+
 }
 
 /* ********************************************** */
 /* ************** MIN WIDTH 601px *************** */
 /* ********************************************** */
 @media screen and (min-width: 601px) {
-  .dev-portflio-itm-spacing {
-    margin-top:17%;
-  }
+
   .modal-details > div {
     width: 400px;
   }
+
+  .section-title {
+    width: 60%;
+    border-bottom: 1px solid #f7cd66;
+  }
+
+  .section-copy {
+    width: 70%;
+  }
+
 }
 
 /* ******************************************** */
@@ -1727,37 +1942,145 @@ a.prev-b:hover,a.next-b:hover {
   /* ******** MIN WIDTH 768 || HOME PAGE ******** */
   /* ******************************************** */
 
-  .mobile-nav-icon {
+  .homepage-masthead .home-scroll-indication {
+    /*margin-top: 38%;*/
+  }
+
+  .header-anchor-co-name img {
+    width: 23%;
+  }
+
+  header {
+    margin: 0% 3.5% 4.55%;
+    padding-top: 4%;
+  }
+
+  .welcome-page-spacing {
+    margin-bottom: 76%;
+  }
+
+  .home-intro {
+    width: 59%;
+  }
+
+
+  .home-page main {
+    min-height: 66vh;
+  }
+
+  .home-welcome-booking {
+    margin-top: 15%;
+  }
+
+  .hotel-banded-img img {
+    width: 116%;
+  }
+
+  .section-title {
+    width: 37%;
+  }
+
+  .section-copy {
+    width: 50%;
+  }
+
+  .section-title-box {
+    margin-bottom: 2%;
+  }
+
+  .rooms-grid-box {
+    margin-right: 6%;
+    margin-left: 6%;
+  }
+
+  .hotel-room {
+    width: 30%;
+  }
+
+  .room-title-background p {
+      font-size: 1.1em;
+  }
+
+  .booking-btn {
+    margin-top: 1%;
+  }
+
+  .suana {
+    margin: 0% Auto 6%;
+  }
+
+  .rooms-dropdown-btn {
+    margin-top: 5%;
+  }
+
+  .rooftop-page .home-welcome-booking {
+    margin-top: 9%;
+    margin-bottom: 0%;
+  }
+
+  .footer-contact-info {
+    margin-top: 0%;
+  }
+
+  .footer-social-media-nav nav ul {
+    margin-right: 39%;
+    margin-left: 39%;
+}
+
+}
+
+
+/* ******************************************** */
+/* ************** MIN WIDTH 770 ************** */
+/* ******************************************** */
+@media screen and (min-width: 770px) {
+
+.welcome-page-spacing {
+  margin-bottom: 33%;
+  }
+}
+
+
+/* ******************************************** */
+/* ************** MIN WIDTH 840 ************** */
+/* ******************************************** */
+@media screen and (min-width: 840px) {
+
+  .masthead-img {
+    width: 35%;
+  }
+
+}
+
+
+/* ******************************************** */
+/* ************** MIN WIDTH 964 ************** */
+/* ******************************************** */
+@media screen and (min-width: 964px) {
+  .first-section {
+    padding-top: 5%;
+  }
+
+  .room-banded-img {
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .small {
     display: none;
   }
 
-
-
-  .footer-social-media-nav nav ul {
-    margin-bottom: .96329em;
+  .large {
+    display: block;
   }
 
-  .footer-social-media-nav nav ul li {
-    width: 6.5%;
+  .room-banded-img img {
+    width: 290%
   }
 
-  .footer-contact-info p {
-    font-size: 1.0275em;
-    margin-block-start: .64219em;
-    margin-block-end: .64219em;
+  .rooms-dropdown-btn {
+    margin-top: 5%;
   }
-
-  .footer-copyright-info p {
-    font-size: .62935em;
-    margin-block-start: .5em;
-  }
-
-  .dev-portflio-itm-spacing {
-    margin-top:5%;
-  }
-
-
-
 }
 
 
@@ -1765,8 +2088,399 @@ a.prev-b:hover,a.next-b:hover {
 /* ************** MIN WIDTH 1024 ************** */
 /* ******************************************** */
 @media screen and (min-width: 1024px) {
-  .dev-portflio-itm-spacing {
-    margin-top:2%;
+
+  header {
+    margin: 0% 3.5% 2%;
+    padding-top: 2%;
+  }
+
+  .header-anchor-co-name img {
+    width: 100%;
+  }
+
+  .mobile-nav-icon {
+    display: none;
+  }
+
+  #logo-img {
+    width: 15%;
+  }
+
+  #nav-section {
+    width: 67%;
+  }
+
+  #book-now {
+    width: 10%;
+  }
+
+  .horizontal-nav {
+    display: flex;
+    width: 100%;
+    margin: 0;
+    overflow: visible;
+  }
+
+  .horizontal-nav nav {
+    display: block;
+    width: 100%;
+    padding: 0.5% 5% 0 10%;
+    margin: 0;
+  }
+
+  .horizontal-nav nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    padding-inline-start: 0;
+  }
+
+  .horizontal-nav nav ul li {
+    display: flex;
+  }
+
+  .horizontal-nav nav ul li a {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 1em;
+    color: #fff;
+    padding: .625em .625em 0em .625em;
+  }
+
+  #nav-on-page {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 1em;
+    color: #f7cd66;
+  }
+
+/*  .dropdown-content dd {
+      margin-inline-start: 0;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 100;
+      text-transform: uppercase;
+      text-decoration: none;
+      font-size: .7em;
+      padding: .625em;
+      color: #fff;
+  } */
+
+  .horizontal-nav a:hover {
+    color: #edcf88;
+  }
+
+  .h-nav-dropdown button {
+    background-color: transparent;
+    border: none;
+  }
+
+  .h-nav-dropdown button:hover,
+  .h-nav-dropdown button:focus {
+    height: 17px;
+    background-color: transparent;
+    border: none;
+  }
+
+  .h-nav-dropdown-btn {
+
+}
+
+  /* Dropdown Content (Hidden by Default) */
+  .h-nav-dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #000;
+    opacity: .8;
+    box-shadow: 0px 1px 10px 3px rgba(0,0,0,0.2);
+    z-index: 1;
+    width: 20%;
+    margin: auto;
+  }
+
+  /* Links inside the dropdown */
+  .h-nav-dropdown-content a {
+    /*color: black;
+    padding: .625em .625em 0em .625em;
+    text-decoration: none;
+    display: block; */
+  }
+
+  /* Change color of dropdown links on hover */
+  .h-nav-dropdown-content a:hover {
+    color: #edcf88;
+  }
+
+  /* Show the dropdown menu on hover */
+  .h-nav-dropdown:hover .h-nav-dropdown-content {
+    display: block;
+  }
+
+  .h-nav-dropdown-content nav{
+    display: inline-block;
+    width: 100%;
+    padding: unset;
+  }
+
+  .h-nav-dropdown-content nav dl {
+    text-align: center;
+    margin-block-start: .5em;
+    margin-block-end: .5em;
+  }
+
+  .h-nav-dropdown-content nav dl dt{
+    display: inline-block;
+    width: 100%;
+    padding: unset;
+  }
+
+  .h-nav-dropdown-content nav dl dt a {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    text-transform: capitalize;
+    text-decoration: none;
+    font-size: .9em;
+    color: #fff;
+  }
+
+  .h-nav-dropdown-content dd {
+      margin-inline-start: 0;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 100;
+      text-transform: uppercase;
+      text-decoration: none;
+      font-size: .7em;
+
+      color: #fff;
+  }
+
+  .header-section .header-anchor-hotel-booking {
+    display: block;
+  }
+
+  .nav-booking-btn {
+    margin-top: 0;
+  }
+
+  .home-page main {
+    min-height: 66vh;
+  }
+
+  .home-intro {
+    width: 44%;
+    margin-top: 9%;
+    margin-left: 11%;
+  }
+
+  .hotel-banded-img img {
+    width: 100%;
+  }
+
+  .homepage-masthead {
+    padding-top: 23%;
+    padding-bottom: 10%;
+  }
+
+  .masthead-img {
+    width: 23%;
+  }
+
+  .homepage-masthead .home-scroll-indication {
+    /*margin-top: 8%;*/
+  }
+
+  .section-title {
+    width: 100%;
+  }
+
+  .section-copy {
+      width: 100%;
+  }
+
+  .section-title-box {
+    width: 39%;
+    margin: 0 auto;
+  }
+
+  .section-title p {
+    letter-spacing: 1.5px;
+    font-size: 1.2em;
+  }
+
+  .carousel-indicators-blk {
+    padding: 1em 0em .1875em 0em;
+  }
+
+  .rm-hover-on {
+    display: none;
+    position: absolute;
+    width: 100%;
+    top: 37%;
+  }
+
+  .hotel-room:hover {
+    background-color: #000000;
+  }
+
+  .hotel-room:hover img {
+    opacity: .3;
+  }
+
+  .rm-hover-on-rm-name {
+
+  }
+
+  .rm-hover-on-rm-name p {
+    font-family: 'EB Garamond', serif;
+    color: #ffffff;
+    text-align: center;
+    text-transform: capitalize;
+    font-size: .9em;
+    font-weight: 100;
+    margin-block-start: .4375em;
+    margin-block-end: .4375em;
+  }
+
+  .rm-hover-on-btn {
+    width: 50%;
+    border: 1px solid transparent;
+    border-radius: .7em;
+    background: #fff;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .rm-hover-on-btn p {
+    font-family: 'Montserrat', sans-serif;
+    color: #294634;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: .9em;
+    font-weight: 600;
+    margin-block-start: .4375em;
+    margin-block-end: .4375em;
+}
+
+  .hotel-room:hover .rm-hover-on {
+    display: block;
+  }
+
+  .hotel-room:hover .rm-hover-off {
+    display: none;
+  }
+
+
+
+  .booking-btn {
+    margin-top: 0%;
+  }
+
+  #whiskey-sushi .home-welcome-booking-title br{
+    display: none;
+  }
+
+  .whiskey-sushi-coming-soon-notice-title p {
+    font-size: 5.5em;
+    letter-spacing: .05em;
+  }
+
+  .whiskey-sushi-coming-soon-notice-subtitle p {
+    font-size: 2.8em;
+  }
+
+  .line {
+    height: 2px;
+    width: 8.35em;
+    margin-bottom: .7em;
+  }
+
+  .footer-section-contact-info {
+    flex-flow: row;
+    justify-content: space-between;
+  }
+
+  .footer-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 33%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+  }
+
+  .footer-social-media-nav nav ul {
+    /*margin-right: 20%;
+    margin-left: 20%;*/
+  }
+
+  .footer-social-title p {
+    font-size: .9em;
+    margin-block-start: .4375em;
+    margin-block-end: 0em;
+  }
+
+  .footer-logo {
+    display: block;
+    width: 40%;
+    margin: 0 auto;
+  }
+
+  .footer-logo img{
+    width: 100%;
+  }
+
+  .footer-contact-info-ph p {
+    margin-block-end: 0em;
+  }
+
+  .footer-contact-info-title {
+    display: none;
+  }
+
+  .footer-contact-us {
+    display: block;
+    width: 33%;
+    margin-right: auto;
+    margin-left: auto;
+
+  }
+
+  .footer-copyright-info br {
+    display: none;
+  }
+
+  .copyright-info-vert-bar {
+    display: inline;
+  }
+
+  .footer-social-title {
+    display: contents;
+  }
+
+  .footer-contact-us-title p {
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    color: #ffffff;
+    text-align: left;
+    font-size: .9em;
+    font-weight: 300;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+  }
+
+  .footer-contact-us-subtitle p {
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    color: #ffffff;
+    text-align: left;
+    font-size: .6em;
+    font-weight: 300;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
   }
 }
 
@@ -1776,13 +2490,13 @@ a.prev-b:hover,a.next-b:hover {
 /* ******************************************** */
 @media screen and (min-width:1025px) {
 
-  .footer-social-media-nav nav ul li {
+  /*.footer-social-media-nav nav ul li {
     width: 4.5%;
-  }
+  } */
 
-  .footer-contact-info p {
+  /* .footer-contact-info p {
     font-size: .8em;
-  }
+  } */
 
   /*.footer-copyright-info p br {
     display: none;
@@ -1795,9 +2509,7 @@ a.prev-b:hover,a.next-b:hover {
 /* ******************************************** */
 @media screen and (min-width:1215px) {
 
-  .footer-social-media-nav nav ul li {
-    width: 3.5%;
-  }
+
 
 }
 
@@ -1807,8 +2519,34 @@ a.prev-b:hover,a.next-b:hover {
 /* ******************************************** */
 @media screen and (min-width:1380px) {
 
-  .footer-social-media-nav nav ul li {
-    width: 3%;
+
+}
+
+
+/* ******************************************** */
+/* ************** MIN WIDTH 1470 *************** */
+/* ******************************************** */
+@media screen and (min-width:1470px) {
+  .homepage-masthead {
+    padding-top: 18%;
+  }
+
+}
+
+
+
+
+/* ******************************************** */
+/* ************** MIN WIDTH 2090 *************** */
+/* ******************************************** */
+@media screen and (min-width:2090px) {
+  .homepage-masthead {
+    padding-top: 15%;
+    padding-bottom: 7%;
+  }
+
+  .masthead-img {
+    width: 19%;
   }
 
 }
